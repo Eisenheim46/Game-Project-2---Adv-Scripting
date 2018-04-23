@@ -22,9 +22,7 @@ public class CameraControls : MonoBehaviour {
         yRotation += Input.GetAxis(mouseAxisX) * cameraSpeed;
         xRotation -= Input.GetAxis(mouseAxisY) * cameraSpeed;
 
-       xRotation = Mathf.Clamp(xRotation, minClamp, maxClamp);
-
-        Debug.Log(xRotation);
+        xRotation = Mathf.Clamp(xRotation, minClamp, maxClamp);
 
         transform.eulerAngles = new Vector3(xRotation, yRotation, 0);
     }

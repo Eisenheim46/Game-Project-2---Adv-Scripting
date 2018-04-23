@@ -25,18 +25,20 @@ public class Player : MonoBehaviour {
 
     private void Update()
     {
-        float vAxis = Input.GetAxis(verticalButtons);
-        float hAxis = Input.GetAxis(horizontalButtons);
+        float vDirection = Input.GetAxis(verticalButtons);
+        float hDirection = Input.GetAxis(horizontalButtons);
 
         if (Mathf.Abs(Input.GetAxis(horizontalButtons)) > 0 || Mathf.Abs(Input.GetAxis(verticalButtons)) > 0)
         {
-            Vector3 movement = (transform.forward) * movementSpeed * vAxis * Time.deltaTime;
-            Vector3 newAngles = transform.eulerAngles;
+            Vector3 movement = (transform.forward) * movementSpeed * vDirection * Time.deltaTime; //On what blue axis * how fast * direction * realtime seconds
+            Vector3 sideMovement = (transform.right) * movementSpeed * hDirection * Time.deltaTime;//Same as above but on the red axis
+            Vector3 newAngles = transform.eulerAngles; //Handle rotation of the player
 
-            newAngles.y = camera.CameraEulerAngleY;
+            newAngles.y = camera.CameraEulerAngleY; //Change only the Y rotation on the V3
+            transform.eulerAngles = newAngles;// Insert whole V3 rotation change to the character
 
-            transform.eulerAngles = newAngles;
-            rPlayer.MovePosition(rPlayer.position + movement);
+            rPlayer.MovePosition(rPlayer.position + movement + sideMovement);//Move the character forward from its position
+            //rPlayer.MovePosition(rPlayer.position + sideMovement);//Move the
         } 
     }
 }

@@ -9,15 +9,16 @@ public class MenuButtons : MonoBehaviour
 
     [SerializeField] private AudioSource sfx;
 
-    [SerializeField] private GameObject menuPanel;
-    [SerializeField] private GameObject playPanel;
+    [SerializeField] private Menu menuManager;
 
+    //----------------------------------
+    //Menu Buttons
     public void ClickedPlayButton()
     {
         sfx.PlayDelayed(0);
 
-        menuPanel.SetActive(!menuPanel.activeSelf);
-        playPanel.SetActive(!playPanel.activeSelf);
+        menuManager.MenuPanel.SetActive(!menuManager.MenuPanel.activeSelf);
+        menuManager.PlayPanel.SetActive(!menuManager.PlayPanel.activeSelf);
     }
 
     public void ClickedSoundButton()
@@ -28,11 +29,16 @@ public class MenuButtons : MonoBehaviour
     public void ClickedControlsButton()
     {
         sfx.PlayDelayed(0);
+
+        menuManager.TargetRotation = -75;
+
+        menuManager.MenuPanel.SetActive(false);
+        menuManager.ControlsPanel.SetActive(true);
     }
 
     public void ClickedCreditsButton()
     {
-
+        StartCoroutine(WaitThenLoadScene(4));
     }
 
     public void ClickedQuitButton()
@@ -45,6 +51,17 @@ public class MenuButtons : MonoBehaviour
         StartCoroutine(WaitThenLoadScene(0));
     }
 
+    public void ClickedBackButton()
+    {
+        sfx.PlayDelayed(0);
+
+        menuManager.TargetRotation = 0;
+
+        menuManager.MenuPanel.SetActive(true);
+        menuManager.PlayPanel.SetActive(false);
+        menuManager.ControlsPanel.SetActive(false);
+        menuManager.SoundPanel.SetActive(false);
+    }
 
     //--------------------------------------------
     //Planet Level Buttons
