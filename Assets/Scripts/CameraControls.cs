@@ -17,6 +17,11 @@ public class CameraControls : MonoBehaviour {
 
     public float CameraEulerAngleY { get { return transform.eulerAngles.y; } }
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
     private void LateUpdate()
     {
         yRotation += Input.GetAxis(mouseAxisX) * cameraSpeed;

@@ -6,14 +6,23 @@ using UnityEngine.UI;
 public class Gun : MonoBehaviour
 {
 
-    [SerializeField] Text reticle;
+    [SerializeField] private Text reticle;
+    [SerializeField] private float shootDistance;
 	
 	// Update is called once per frame
-	void Update ()
+	private void FixedUpdate ()
     {
 
         ShootRaycast();
 
+    }
+
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Clicking");
+        }
     }
 
     private void ShootRaycast()
@@ -22,7 +31,7 @@ public class Gun : MonoBehaviour
 
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, shootDistance, layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
             //Debug.Log("Did Hit");
@@ -31,7 +40,7 @@ public class Gun : MonoBehaviour
         }
         else
         {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * shootDistance, Color.white);
             //Debug.Log("Did not Hit");
 
             reticle.color = new Color(255, 255, 255);

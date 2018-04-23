@@ -22,7 +22,8 @@ public class Menu : MonoBehaviour {
     public GameObject ControlsPanel { get { return controlsPanel; } set { } }
     public GameObject SoundPanel { get { return soundPanel; } set { } }
 
-    public float TargetRotation { get; set; }
+    public float TargetRotationY { get; set; }
+    public float TargetRotationX { get; set; }
     //-----------------------------------
 
     // Use this for initialization
@@ -31,10 +32,12 @@ public class Menu : MonoBehaviour {
         menuPanel.SetActive(true);
         playPanel.SetActive(false);
         controlsPanel.SetActive(false);
+        SoundPanel.SetActive(false);
 
         camera.localEulerAngles = new Vector3(0, 0, 0);
 
-        TargetRotation = 0f;
+        TargetRotationY = 0f;
+        TargetRotationX = 0f;
 	}
 
     private void Update()
@@ -45,10 +48,13 @@ public class Menu : MonoBehaviour {
     private void CameraRotation()
     {
         float currentAngleY = camera.eulerAngles.y;
+        float currentAngleX = camera.eulerAngles.x;
 
-        float toAngleRotation = Mathf.LerpAngle(currentAngleY, TargetRotation, Time.fixedDeltaTime); //Calculate the lerp and speed for the the rotation
+        float toAngleRotationY = Mathf.LerpAngle(currentAngleY, TargetRotationY, Time.fixedDeltaTime); //Calculate the lerp and speed for the the Y rotation
+        float toAngleRotationX = Mathf.LerpAngle(currentAngleX, TargetRotationX, Time.fixedDeltaTime); //Calculate the lerp and speed for the the Y rotation
 
-        camera.eulerAngles = new Vector3(0, toAngleRotation, 0); //Apply the lerp amount to desired angle
+
+        camera.eulerAngles = new Vector3(toAngleRotationX, toAngleRotationY, 0); //Apply the lerp amount to desired angle
     }
 
 }

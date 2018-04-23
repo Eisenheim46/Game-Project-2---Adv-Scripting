@@ -24,15 +24,28 @@ public class MenuButtons : MonoBehaviour
     public void ClickedSoundButton()
     {
         sfx.PlayDelayed(0);
+
+        menuManager.TargetRotationY = -25;
+        menuManager.TargetRotationX = -60;
+
+        menuManager.MenuPanel.SetActive(false);
+        menuManager.PlayPanel.SetActive(false);
+        menuManager.ControlsPanel.SetActive(false);
+
+        menuManager.SoundPanel.SetActive(true);
     }
 
     public void ClickedControlsButton()
     {
         sfx.PlayDelayed(0);
 
-        menuManager.TargetRotation = -75;
+        menuManager.TargetRotationY = -75;
+        menuManager.TargetRotationX = 0;
 
         menuManager.MenuPanel.SetActive(false);
+        menuManager.PlayPanel.SetActive(false);
+        menuManager.SoundPanel.SetActive(false);
+
         menuManager.ControlsPanel.SetActive(true);
     }
 
@@ -55,7 +68,8 @@ public class MenuButtons : MonoBehaviour
     {
         sfx.PlayDelayed(0);
 
-        menuManager.TargetRotation = 0;
+        menuManager.TargetRotationY = 0;
+        menuManager.TargetRotationX = 0;
 
         menuManager.MenuPanel.SetActive(true);
         menuManager.PlayPanel.SetActive(false);
