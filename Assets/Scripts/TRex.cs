@@ -5,26 +5,27 @@ using UnityEngine.AI;
 
 public class TRex : MonoBehaviour {
 
-    [SerializeField]private Transform targetPlayer;
+    [SerializeField] private Transform targetPlayer;
+
+    private AudioSource roarSFX;
 
     private NavMeshAgent rexyAgent;
-
-    //----------------
-    //Properties
-
-    private int health;
-
-    //----------------
 
 	// Use this for initialization
 	void Start ()
     {
         rexyAgent = GetComponent<NavMeshAgent>();
+        roarSFX = GetComponent<AudioSource>();
 	}
-	
-	// Update is called once per frame
-	void LateUpdate ()
+
+    // Update is called once per frame
+    void LateUpdate()
     {
         rexyAgent.SetDestination(targetPlayer.position);
-	}
+
+        if (Time.fixedTime % 11 == 10)
+        {
+            roarSFX.PlayDelayed(0);
+        }
+    }
 }

@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Jupiter.unity
     guid: 3827cae9af7f8784cb69ef9d3b33d8b9
   - enabled: 1
-    path: Assets/Scenes/Uranus.unity
-    guid: cb6cf92aff4e99e408f244437f390221
+    path: Assets/Scenes/Mars.unity
+    guid: 26b12a4851cd3ae4190c5ff8207a8a31
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 71e01ee5bad37c544899edea9bca12e4

@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    private Rigidbody rPlayer;
-
     [SerializeField] private CameraControls camera;
 
     [SerializeField] private float movementSpeed;
+
+    [SerializeField] private bool hasFullMovement;
+    [SerializeField] private bool hasSideMovement;
+
+    private Rigidbody rPlayer;
 
     private string verticalButtons = "Vertical";
     private string horizontalButtons = "Horizontal";
@@ -18,12 +21,18 @@ public class Player : MonoBehaviour {
         rPlayer = GetComponent<Rigidbody>();
     }
 
-    private void Start()
-    {
-        
-    }
 
     private void Update()
+    {
+        if (hasFullMovement)
+            FullMove();
+        else if (hasSideMovement)
+            SideMove();
+            
+    }
+
+
+    private void FullMove()
     {
         float vDirection = Input.GetAxis(verticalButtons);
         float hDirection = Input.GetAxis(horizontalButtons);
@@ -38,7 +47,22 @@ public class Player : MonoBehaviour {
             transform.eulerAngles = newAngles;// Insert whole V3 rotation change to the character
 
             rPlayer.MovePosition(rPlayer.position + movement + sideMovement);//Move the character forward from its position
-            //rPlayer.MovePosition(rPlayer.position + sideMovement);//Move the
-        } 
+        }
+    }
+
+    private void SideMove()
+    {
+        float hDirection = Input.GetAxis(horizontalButtons);
+
+        if (Mathf.Abs(Input.GetAxis(horizontalButtons)) > 0 || Mathf.Abs(Input.GetAxis(verticalButtons)) > 0)
+        {
+            Vector3 sideMovement = (transform.right) * movementSpeed * hDirection * Time.deltaTime;//Same as above but on the red axis
+            Vector3 newAngles = transform.eulerAngles; //Handle rotation of the player
+
+            //newAngles.y = camera.CameraEulerAngleY; //Change only the Y rotation on the V3
+           // transform.eulerAngles = newAngles;// Insert whole V3 rotation change to the character
+
+            rPlayer.MovePosition(rPlayer.position + sideMovement);//Move the character forward from its position
+        }
     }
 }

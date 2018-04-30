@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: a99abd6a4156e5343ad88b8b66734a22
+timeCreated: 1525117975
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bip01
+    100002: Bip01 Footsteps
+    100004: Bip01 Head
+    100006: Bip01 HeadNub
+    100008: Bip01 L Calf
+    100010: Bip01 L Clavicle
+    100012: Bip01 L Finger0
+    100014: Bip01 L Finger01
+    100016: Bip01 L Finger02
+    100018: Bip01 L Finger0Nub
+    100020: Bip01 L Finger1
+    100022: Bip01 L Finger11
+    100024: Bip01 L Finger12
+    100026: Bip01 L Finger1Nub
+    100028: Bip01 L Finger2
+    100030: Bip01 L Finger21
+    100032: Bip01 L Finger22
+    100034: Bip01 L Finger2Nub
+    100036: Bip01 L Foot
+    100038: Bip01 L Forearm
+    100040: Bip01 L Hand
+    100042: Bip01 L HorseLink
+    100044: Bip01 L Thigh
+    100046: Bip01 L Toe0
+    100048: Bip01 L Toe01
+    100050: Bip01 L Toe0Nub
+    100052: Bip01 L Toe1
+    100054: Bip01 L Toe11
+    100056: Bip01 L Toe1Nub
+    100058: Bip01 L Toe2
+    100060: Bip01 L Toe21
+    100062: Bip01 L Toe2Nub
+    100064: Bip01 L UpperArm
+    100066: Bip01 Neck
+    100068: Bip01 Neck1
+    100070: Bip01 Neck2
+    100072: Bip01 Neck3
+    100074: Bip01 Neck4
+    100076: Bip01 Pelvis
+    100078: Bip01 R Calf
+    100080: Bip01 R Clavicle
+    100082: Bip01 R Finger0
+    100084: Bip01 R Finger01
+    100086: Bip01 R Finger02
+    100088: Bip01 R Finger0Nub
+    100090: Bip01 R Finger1
+    100092: Bip01 R Finger11
+    100094: Bip01 R Finger12
+    100096: Bip01 R Finger1Nub
+    100098: Bip01 R Finger2
+    100100: Bip01 R Finger21
+    100102: Bip01 R Finger22
+    100104: Bip01 R Finger2Nub
+    100106: Bip01 R Foot
+    100108: Bip01 R Forearm
+    100110: Bip01 R Hand
+    100112: Bip01 R HorseLink
+    100114: Bip01 R Thigh
+    100116: Bip01 R Toe0
+    100118: Bip01 R Toe01
+    100120: Bip01 R Toe0Nub
+    100122: Bip01 R Toe1
+    100124: Bip01 R Toe11
+    100126: Bip01 R Toe1Nub
+    100128: Bip01 R Toe2
+    100130: Bip01 R Toe21
+    100132: Bip01 R Toe2Nub
+    100134: Bip01 R UpperArm
+    100136: Bip01 Spine
+    100138: Bip01 Spine1
+    100140: Bip01 Tail
+    100142: Bip01 Tail1
+    100144: Bip01 Tail10
+    100146: Bip01 Tail2
+    100148: Bip01 Tail3
+    100150: Bip01 Tail4
+    100152: Bip01 Tail5
+    100154: Bip01 Tail6
+    100156: Bip01 Tail7
+    100158: Bip01 Tail8
+    100160: Bip01 Tail9
+    100162: Bip01 TailNub
+    100164: Bone01
+    100166: Bone02
+    100168: Bone03
+    100170: Bone04
+    100172: Bone05
+    100174: Bone06
+    100176: Bone07
+    100178: Bone08
+    100180: Bone09
+    100182: Bone10
+    100184: Bone11
+    100186: Bone12
+    100188: Bone13
+    100190: Bone14
+    100192: Bone15
+    100194: Bone16
+    100196: Bone17
+    100198: Bone18
+    100200: Bone19
+    100202: Bone20
+    100204: Bone21
+    100206: Bone22
+    100208: Bone23
+    100210: Bone24
+    100212: Bone25
+    100214: Bone26
+    100216: Bone27
+    100218: Bone28
+    100220: Bone29
+    100222: Bone30
+    100224: Bone31
+    100226: Bone32
+    100228: Bone33
+    100230: Bone34
+    100232: Bone35
+    100234: Bone36
+    100236: Bone37
+    100238: Bone38
+    100240: Circle01
+    100242: Cone01
+    100244: Cone02
+    100246: Cone03
+    100248: Cone04
+    100250: Cone05
+    100252: Cone06
+    100254: Cone07
+    100256: Cone08
+    100258: Cone09
+    100260: Cone10
+    100262: Cone11
+    100264: Cone12
+    100266: Cone13
+    100268: Cone14
+    100270: Cylinder01
+    100272: Eye Inner - Colored
+    100274: Eye Inner - Colored01
+    100276: Eye Outer - Clear
+    100278: Eye Outer - Clear01
+    100280: IK Chain01
+    100282: Lower Jaw - Gum&Teeth
+    100284: Main Mesh
+    100286: Mouth Webbing
+    100288: Point01
+    100290: //RootNode
+    100292: Tongue
+    100294: Upper Jaw - Gum&Teeth
+    100296: VRayLight01
+    400000: Bip01
+    400002: Bip01 Footsteps
+    400004: Bip01 Head
+    400006: Bip01 HeadNub
+    400008: Bip01 L Calf
+    400010: Bip01 L Clavicle
+    400012: Bip01 L Finger0
+    400014: Bip01 L Finger01
+    400016: Bip01 L Finger02
+    400018: Bip01 L Finger0Nub
+    400020: Bip01 L Finger1
+    400022: Bip01 L Finger11
+    400024: Bip01 L Finger12
+    400026: Bip01 L Finger1Nub
+    400028: Bip01 L Finger2
+    400030: Bip01 L Finger21
+    400032: Bip01 L Finger22
+    400034: Bip01 L Finger2Nub
+    400036: Bip01 L Foot
+    400038: Bip01 L Forearm
+    400040: Bip01 L Hand
+    400042: Bip01 L HorseLink
+    400044: Bip01 L Thigh
+    400046: Bip01 L Toe0
+    400048: Bip01 L Toe01
+    400050: Bip01 L Toe0Nub
+    400052: Bip01 L Toe1
+    400054: Bip01 L Toe11
+    400056: Bip01 L Toe1Nub
+    400058: Bip01 L Toe2
+    400060: Bip01 L Toe21
+    400062: Bip01 L Toe2Nub
+    400064: Bip01 L UpperArm
+    400066: Bip01 Neck
+    400068: Bip01 Neck1
+    400070: Bip01 Neck2
+    400072: Bip01 Neck3
+    400074: Bip01 Neck4
+    400076: Bip01 Pelvis
+    400078: Bip01 R Calf
+    400080: Bip01 R Clavicle
+    400082: Bip01 R Finger0
+    400084: Bip01 R Finger01
+    400086: Bip01 R Finger02
+    400088: Bip01 R Finger0Nub
+    400090: Bip01 R Finger1
+    400092: Bip01 R Finger11
+    400094: Bip01 R Finger12
+    400096: Bip01 R Finger1Nub
+    400098: Bip01 R Finger2
+    400100: Bip01 R Finger21
+    400102: Bip01 R Finger22
+    400104: Bip01 R Finger2Nub
+    400106: Bip01 R Foot
+    400108: Bip01 R Forearm
+    400110: Bip01 R Hand
+    400112: Bip01 R HorseLink
+    400114: Bip01 R Thigh
+    400116: Bip01 R Toe0
+    400118: Bip01 R Toe01
+    400120: Bip01 R Toe0Nub
+    400122: Bip01 R Toe1
+    400124: Bip01 R Toe11
+    400126: Bip01 R Toe1Nub
+    400128: Bip01 R Toe2
+    400130: Bip01 R Toe21
+    400132: Bip01 R Toe2Nub
+    400134: Bip01 R UpperArm
+    400136: Bip01 Spine
+    400138: Bip01 Spine1
+    400140: Bip01 Tail
+    400142: Bip01 Tail1
+    400144: Bip01 Tail10
+    400146: Bip01 Tail2
+    400148: Bip01 Tail3
+    400150: Bip01 Tail4
+    400152: Bip01 Tail5
+    400154: Bip01 Tail6
+    400156: Bip01 Tail7
+    400158: Bip01 Tail8
+    400160: Bip01 Tail9
+    400162: Bip01 TailNub
+    400164: Bone01
+    400166: Bone02
+    400168: Bone03
+    400170: Bone04
+    400172: Bone05
+    400174: Bone06
+    400176: Bone07
+    400178: Bone08
+    400180: Bone09
+    400182: Bone10
+    400184: Bone11
+    400186: Bone12
+    400188: Bone13
+    400190: Bone14
+    400192: Bone15
+    400194: Bone16
+    400196: Bone17
+    400198: Bone18
+    400200: Bone19
+    400202: Bone20
+    400204: Bone21
+    400206: Bone22
+    400208: Bone23
+    400210: Bone24
+    400212: Bone25
+    400214: Bone26
+    400216: Bone27
+    400218: Bone28
+    400220: Bone29
+    400222: Bone30
+    400224: Bone31
+    400226: Bone32
+    400228: Bone33
+    400230: Bone34
+    400232: Bone35
+    400234: Bone36
+    400236: Bone37
+    400238: Bone38
+    400240: Circle01
+    400242: Cone01
+    400244: Cone02
+    400246: Cone03
+    400248: Cone04
+    400250: Cone05
+    400252: Cone06
+    400254: Cone07
+    400256: Cone08
+    400258: Cone09
+    400260: Cone10
+    400262: Cone11
+    400264: Cone12
+    400266: Cone13
+    400268: Cone14
+    400270: Cylinder01
+    400272: Eye Inner - Colored
+    400274: Eye Inner - Colored01
+    400276: Eye Outer - Clear
+    400278: Eye Outer - Clear01
+    400280: IK Chain01
+    400282: Lower Jaw - Gum&Teeth
+    400284: Main Mesh
+    400286: Mouth Webbing
+    400288: Point01
+    400290: //RootNode
+    400292: Tongue
+    400294: Upper Jaw - Gum&Teeth
+    400296: VRayLight01
+    2100000: 'Material #31'
+    2100002: 'Material #34'
+    2100004: 'Material #58'
+    2100006: 'Material #35'
+    2100008: 'Material #32'
+    2100010: 'Material #33'
+    2100012: No Name
+    2300000: Cone01
+    2300002: Cone02
+    2300004: Cone03
+    2300006: Cone04
+    2300008: Cone05
+    2300010: Cone06
+    2300012: Cone07
+    2300014: Cone08
+    2300016: Cone09
+    2300018: Cone10
+    2300020: Cone11
+    2300022: Cone12
+    2300024: Cone13
+    2300026: Cone14
+    2300028: Cylinder01
+    2300030: Eye Inner - Colored
+    2300032: Eye Inner - Colored01
+    2300034: Eye Outer - Clear
+    2300036: Eye Outer - Clear01
+    2300038: Lower Jaw - Gum&Teeth
+    2300040: Main Mesh
+    2300042: Mouth Webbing
+    2300044: Tongue
+    2300046: Upper Jaw - Gum&Teeth
+    3300000: Cone01
+    3300002: Cone02
+    3300004: Cone03
+    3300006: Cone04
+    3300008: Cone05
+    3300010: Cone06
+    3300012: Cone07
+    3300014: Cone08
+    3300016: Cone09
+    3300018: Cone10
+    3300020: Cone11
+    3300022: Cone12
+    3300024: Cone13
+    3300026: Cone14
+    3300028: Cylinder01
+    3300030: Eye Inner - Colored
+    3300032: Eye Inner - Colored01
+    3300034: Eye Outer - Clear
+    3300036: Eye Outer - Clear01
+    3300038: Lower Jaw - Gum&Teeth
+    3300040: Main Mesh
+    3300042: Mouth Webbing
+    3300044: Tongue
+    3300046: Upper Jaw - Gum&Teeth
+    4300000: Main Mesh
+    4300002: Tongue
+    4300004: Mouth Webbing
+    4300006: Cylinder01
+    4300008: Lower Jaw - Gum&Teeth
+    4300010: Upper Jaw - Gum&Teeth
+    4300012: Eye Inner - Colored
+    4300014: Eye Outer - Clear
+    4300016: Eye Inner - Colored01
+    4300018: Eye Outer - Clear01
+    4300020: Cone14
+    4300022: Cone13
+    4300024: Cone12
+    4300026: Cone10
+    4300028: Cone09
+    4300030: Cone11
+    4300032: Cone05
+    4300034: Cone06
+    4300036: Cone07
+    4300038: Cone08
+    4300040: Cone02
+    4300042: Cone01
+    4300044: Cone03
+    4300046: Cone04
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #31'
+    second: {fileID: 2100000, guid: 2755789767d4e764783d93e7a4132901, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #33'
+    second: {fileID: 2100000, guid: 80918613733d06d46a663658c34bd78f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #34'
+    second: {fileID: 2100000, guid: 3a89dbd3392b5b847ae4d72f18a56585, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
