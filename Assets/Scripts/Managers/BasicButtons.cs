@@ -24,6 +24,8 @@ public class BasicButtons : MonoBehaviour {
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         panel[0].SetActive(false);
     }
 

@@ -717,11 +717,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'XXX Assets:
-
-    ---------------
-
-'
+  m_Text: "Material Assets:\n---------------\n\nLava Texture by Phil Kallahar from
+    Pexels.com\r\n\nBrown Board by rawpixel.com from Pexels.com\r\n\r\nRed Tiles by
+    rawpixel.com from Pexels.com"
 --- !u!222 &320156207
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1318,7 +1316,8 @@ MonoBehaviour:
 
     ---------
 
-'
+
+    Aerospace by Geronimo Fonts from 1001freefonts.com'
 --- !u!222 &1637321056
 CanvasRenderer:
   m_ObjectHideFlags: 0

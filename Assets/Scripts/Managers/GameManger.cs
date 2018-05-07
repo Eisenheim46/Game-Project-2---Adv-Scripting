@@ -11,6 +11,8 @@ public class GameManger : MonoBehaviour {
 
     [SerializeField] private DinoHealth dinosaur;
 
+    [SerializeField] private PlayerHealth player;
+
     // Use this for initialization
     void Start ()
     {
@@ -23,10 +25,17 @@ public class GameManger : MonoBehaviour {
     {
         if (Input.GetButtonDown("Cancel"))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             pauseMenu.SetActive(true);
         }
 
         if (dinosaur.Health <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else if (player.PHealth <= 0)
         {
             SceneManager.LoadScene(0);
         }

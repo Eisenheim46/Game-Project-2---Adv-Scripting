@@ -40,6 +40,9 @@ public class GameManger2 : MonoBehaviour {
     {
         if (Input.GetButtonDown("Cancel"))
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             pauseMenu.SetActive(true);
         }
 

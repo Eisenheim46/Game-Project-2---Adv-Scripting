@@ -21,6 +21,7 @@ public class CameraControls : MonoBehaviour {
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void LateUpdate()
